@@ -1,0 +1,360 @@
+@charset "UTF-8";
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #8498c2;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: nowrap;
+    align-items: baseline;
+    align-content: space-between;
+    padding: 50px;
+    background-color: rgb(190, 188, 188);
+    width: 100%;
+    color: #033E8C;
+    position: relative;
+  }
+  footer a {
+    color: black;
+  }
+  footer .menuFooter {
+    margin: 20px;
+  }
+  footer iframe {
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+  }
+  footer .imagenredes {
+    width: 30px;
+    height: 30px;
+  }
+  form {
+    padding-top: 250px;
+  }
+  .imagenredes {
+    display: flex;
+    flex-direction: row;
+  }
+  .FOTOPERFIL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .autogestion {
+    grid-template-rows: auto auto;
+    /* Adjust the grid rows for smaller screens */
+    grid-auto-flow: row;
+    /* Change the flow to a single column for better stacking */
+    gap: 20px;
+    /* Increase the gap for better spacing */
+  }
+  .autogestion .video {
+    margin: 0;
+    /* Reset margins for videos */
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+  footer {
+    padding: 2px;
+    /* Adjust the padding for better spacing on smaller screens */
+    flex-direction: column;
+    /* Stack items in the footer vertically on smaller screens */
+  }
+  footer .menuFooter {
+    margin: 10px;
+    /* Adjust margin for better spacing */
+  }
+  footer iframe {
+    width: 100%;
+    /* Make the map iframe take full width on smaller screens */
+    height: 200px;
+    /* Adjust the height for better visibility */
+  }
+  .autogestion {
+    grid-template-rows: auto;
+    /* Adjust the grid rows for mobile screens */
+  }
+}
+h1 {
+  color: #033E8C;
+  margin-bottom: 30px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+Div p {
+  margin: 20px;
+}
+
+footer h2 {
+  text-align: justify;
+  position: absolute;
+  top: 15px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+article h3 {
+  text-align: center;
+}
+
+.ConteinerQuienes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.Perfiles {
+  width: 400px;
+  height: 400px;
+  color: rgb(255, 255, 255);
+  background-color: #658ca3;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 50px;
+  text-align: center;
+}
+
+.FOTOPERFIL {
+  width: 400px;
+  height: 225px;
+  display: inline-block;
+}
+
+.video {
+  display: grid;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Proporción 16:9 para el contenedor del video */
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  margin: 10px auto;
+  margin-top: 10px;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.formularioDecontacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
+  margin-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, .boton {
+  width: 260px;
+  padding: 8px;
+  margin-bottom: 15px;
+  transition: all 2s;
+}
+
+input:focus, .boton:focus {
+  width: 360px;
+  font-size: 20px;
+}
+
+.boton {
+  border-radius: 5px;
+  background-color: #6f93dc;
+  color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+}
+.boton:hover {
+  background-color: rgb(61, 134, 198);
+  border: #052341;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #00639c;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.faq-container .accordion .faq-item {
+  margin-bottom: 20px;
+}
+.faq-container .accordion .faq-item .faq-question {
+  font-weight: bold;
+  cursor: pointer;
+}
+.faq-container .accordion .faq-item .faq-question .faq-answer {
+  display: none;
+  margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #8498c2;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  grid-area: header;
+  margin: 0;
+  padding-right: 0px;
+}
+body header .imagHeader {
+  width: 50px;
+}
+body header nav {
+  background-color: #4775D1;
+  inline-size: 100%;
+  width: 100%;
+  background-color: #4775D1;
+  padding: 10px;
+  /* Add some padding to the navigation bar */
+}
+
+main {
+  grid-area: main;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0px;
+  margin: 0;
+  background-color: rgb(121, 151, 207);
+  color: rgb(255, 255, 255);
+}
+
+#main-novedades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+nav {
+  grid-area: nav;
+}
+nav a {
+  color: #eaeced;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+nav .imagHeader {
+  transition: height 4s, width 4s;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: nowrap;
+  align-items: baseline;
+  align-content: space-between;
+  padding: 50px;
+  background-color: rgb(190, 188, 188);
+  width: 100%;
+  color: #033E8C;
+  position: relative;
+}
+footer a {
+  color: black;
+}
+footer .menuFooter {
+  margin: 20px;
+}
+footer iframe {
+  margin-top: 5px;
+  width: 200px;
+  height: 100px;
+}
+footer .imagenredes {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  /* agrego para mobile w y h-Adjust the size of social media icons */
+}
+
+#servi .conteinerServicios {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+#servi .conteinerServicios .tarjeta {
+  width: 250px;
+  height: 200px;
+  background-color: #4775D1;
+  box-shadow: 10px 15px 20px grey;
+  border-radius: 15px;
+  padding: 0px;
+  margin-top: 20px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+#servi .conteinerServicios .tarjeta h3 {
+  margin-bottom: 10px;
+}
+#servi .conteinerServicios .tarjeta p {
+  font-size: 12px;
+}
+#servi .conteinerServicios .tarjeta:hover {
+  background-color: rgb(124, 146, 255);
+  width: 300px;
+  height: 250px;
+}
+
+/*# sourceMappingURL=style.css.map */

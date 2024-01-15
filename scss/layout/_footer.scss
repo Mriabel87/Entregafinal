@@ -1,0 +1,29 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: nowrap;
+    align-items: baseline;
+    align-content: space-between;
+    padding: 50px;
+    background-color: rgb(190, 188, 188);
+    width: 100%;
+    color: #033E8C;
+    position: relative;
+    a {
+        color: black;
+    }
+    .menuFooter {
+        margin: 20px;
+    }
+    iframe {
+        margin-top: 5px;
+        @include tamanio (200px,100px);
+    }
+    .imagenredes {
+        @include tamanio (20px,20px);
+        display: flex;
+        flex-direction: row;
+        /* agrego para mobile w y h-Adjust the size of social media icons */
+    }
+}
+

@@ -1,0 +1,19 @@
+nav {
+    grid-area: nav;
+    a {
+        color: #eaeced;
+    }
+
+    ul {
+        list-style: none;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 20px;
+        }
+    }
+    
+    .imagHeader {transition: height 4s,width 4s;}
+
+}

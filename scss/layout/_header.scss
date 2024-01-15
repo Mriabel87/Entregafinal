@@ -1,0 +1,48 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #8498c2;
+    margin: 0;
+    padding: 0;
+
+    header {
+        grid-area: header;
+        margin: 0;
+        padding-right: 0px;
+
+        .imagHeader {
+            width: 50px;
+        }
+
+        nav {
+            background-color: #4775D1;
+            inline-size: 100%;
+            width: 100%;
+            background-color: #4775D1;
+            padding: 10px;
+            /* Add some padding to the navigation bar */
+        }
+    }
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+    margin: 0;
+    background-color: rgb(121, 151, 207);
+    color: rgb(255, 255, 255);
+}
+#main-novedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  
+  }
