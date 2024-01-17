@@ -14,6 +14,7 @@ body {
   background-color: #8498c2;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1023px) {
@@ -45,7 +46,7 @@ body {
     height: 30px;
   }
   form {
-    padding-top: 250px;
+    padding-top: 150px;
   }
   .imagenredes {
     display: flex;
@@ -58,6 +59,7 @@ body {
   }
   #main-novedades {
     grid-template-columns: 1fr;
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -66,19 +68,14 @@ body {
   }
   footer {
     padding: 20px;
-    /* Adjust the padding for better spacing on smaller screens */
     flex-direction: column;
-    /* Stack items in the footer vertically on smaller screens */
   }
   footer .menuFooter {
     margin: 10px;
-    /* Adjust margin for better spacing */
   }
   footer iframe {
     width: 100%;
-    /* Make the map iframe take full width on smaller screens */
     height: 200px;
-    /* Adjust the height for better visibility */
   }
 }
 h1 {
@@ -131,17 +128,24 @@ article h3 {
 
 #main-novedades {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+  max-width: 100%;
 }
-#main-novedades .autogestion {
+
+.autogestion {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: center;
 }
-#main-novedades .autogestion .video {
+.autogestion .video {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.autogestion .video h3 {
+  text-align: center;
 }
 
 .formularioDecontacto {
@@ -223,6 +227,7 @@ body {
   background-color: #8498c2;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 body header {
   grid-area: header;
@@ -238,7 +243,6 @@ body header nav {
   width: 100%;
   background-color: #4775D1;
   padding: 10px;
-  /* Add some padding to the navigation bar */
 }
 
 main {
@@ -249,13 +253,6 @@ main {
   margin: 0;
   background-color: rgb(121, 151, 207);
   color: rgb(255, 255, 255);
-}
-
-#main-novedades {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center;
 }
 
 nav {

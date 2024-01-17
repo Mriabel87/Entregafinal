@@ -9,6 +9,7 @@ body {
     background-color: #8498c2;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 
     header {
         grid-area: header;
@@ -25,7 +26,6 @@ body {
             width: 100%;
             background-color: #4775D1;
             padding: 10px;
-            /* Add some padding to the navigation bar */
         }
     }
 }
@@ -39,10 +39,3 @@ main {
     background-color: rgb(121, 151, 207);
     color: rgb(255, 255, 255);
 }
-#main-novedades {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-  
-  }
