@@ -28,22 +28,23 @@
 
 
 
-.video {
+#main-novedades {
     display: grid;
-    position: relative;
-    padding-bottom: 56.25%;
-    /* Proporción 16:9 para el contenedor del video */
-    overflow: hidden;
-    text-align: center;
-    padding: 20px;
-    margin: 10px auto;
-    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; 
 
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
+    .autogestion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .video {
+            width: 100%;
+          }
+      }
+
+      
+  }
+  
+  
+  
