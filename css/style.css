@@ -14,7 +14,6 @@ body {
   background-color: #8498c2;
   margin: 0;
   padding: 0;
-  max-width: 100%;
 }
 
 @media screen and (max-width: 1023px) {
@@ -31,7 +30,7 @@ body {
     position: relative;
   }
   footer a {
-    color: black;
+    color: rgb(255, 255, 255);
   }
   footer .menuFooter {
     margin: 20px;
@@ -143,6 +142,7 @@ article h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 .autogestion .video h3 {
   text-align: center;
@@ -280,14 +280,16 @@ footer {
   align-items: baseline;
   align-content: space-between;
   padding: 50px;
-  background-color: rgb(190, 188, 188);
+  background-color: rgb(241, 241, 241);
   width: 100%;
   color: #033E8C;
   position: relative;
   margin-top: 50px;
 }
 footer a {
-  color: black;
+  color: rgb(11, 11, 59);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
 footer .menuFooter {
   margin: 20px;
@@ -301,7 +303,9 @@ footer .imagenredes {
   width: 35px;
   height: 35px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 #servi .conteinerServicios {

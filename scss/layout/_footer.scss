@@ -5,16 +5,20 @@ footer {
     align-items: baseline;
     align-content: space-between;
     padding: 50px;
-    background-color: rgb(190, 188, 188);
+    background-color: rgb(241, 241, 241);
     width: 100%;
     color: #033E8C;
     position: relative;
     margin-top: 50px;
+
     a {
-        color: black;
+        color: rgb(11, 11, 59);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:medium;
     }
     .menuFooter {
         margin: 20px;
+        
     }
     iframe {
         margin-top: 5px;
@@ -23,9 +27,9 @@ footer {
     .imagenredes {
         @include tamanio (35px,35px);
         display: flex;
-        flex-direction: row;
-
-        
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
     }
 }
 
