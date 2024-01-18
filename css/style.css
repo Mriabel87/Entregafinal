@@ -284,6 +284,7 @@ footer {
   width: 100%;
   color: #033E8C;
   position: relative;
+  margin-top: 50px;
 }
 footer a {
   color: black;
@@ -297,11 +298,10 @@ footer iframe {
   height: 100px;
 }
 footer .imagenredes {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   display: flex;
   flex-direction: row;
-  /* agrego para mobile w y h-Adjust the size of social media icons */
 }
 
 #servi .conteinerServicios {

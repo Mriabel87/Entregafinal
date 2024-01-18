@@ -9,6 +9,7 @@ footer {
     width: 100%;
     color: #033E8C;
     position: relative;
+    margin-top: 50px;
     a {
         color: black;
     }
@@ -20,10 +21,11 @@ footer {
         @include tamanio (200px,100px);
     }
     .imagenredes {
-        @include tamanio (20px,20px);
+        @include tamanio (35px,35px);
         display: flex;
         flex-direction: row;
-        /* agrego para mobile w y h-Adjust the size of social media icons */
+
+        
     }
 }
 
